@@ -1,0 +1,5 @@
+{
+  "frontend/src/App.tsx": "Main romantic single-page application dedicated to Sweta with smooth section transitions, page-turn animation effect when navigating between sections, butterfly animations that spawn on click and flutter across the screen, Ghibli-inspired portrait integration using the new Sweta portraits, enhanced parallax effects with floating hearts and petals, popup music trigger with volume fade-in using smooth emotional instrumental love song, play/pause music control, and updated relationship date to 29 November.",
+  "frontend/src/index.css": "Complete styling with soft pink/pastel OKLCH color palette, page-turn animation with 3D perspective effect for seamless romantic transitions, butterfly animations with flutter and fly-away effects optimized for mobile, Ghibli portrait frames with glowing effects and animations, cherry blossom backdrops, warm pink toning, enhanced parallax petals and floating hearts, next button styling, and fully responsive mobile-optimized design.",
+  "frontend/src/hooks/useQueries.ts": "Minimal placeholder file for React Query hooks (no backend queries needed for this static romantic website)."
+}

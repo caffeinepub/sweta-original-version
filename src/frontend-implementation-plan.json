@@ -1,0 +1,24 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Restore Sweta romantic copy in App content",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "summary": "Revert all user-facing copy in frontend/src/App.tsx to the original Sweta romantic version (Sweta name, romantic framing, and 29 November date), removing any remaining Kavya ji/Rose Day/friendship-only text and aligning relevant alt text.",
+      "acceptanceCriteria": [
+        "All visible user-facing text in `frontend/src/App.tsx` refers to the recipient as “Sweta” (not “Kavya ji”).",
+        "The story section references “29 November” (not “Rose Day”).",
+        "Section titles and letter/signature are in the romantic version (e.g., titles like “Our Love Story”, romantic phrasing, and boyfriend/romantic signature if present in the original).",
+        "All relevant image `alt` text in `frontend/src/App.tsx` uses “Sweta” where a person-name is used, and does not mention “Kavya ji”."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Update/verify all hardcoded strings and any name-referencing `alt` text to ensure the page consistently uses “Sweta”, retains romantic relationship framing, and references the occasion/date as “29 November”, with no remaining mentions of “Kavya ji”, “Rose Day”, or friendship-only wording. Keep existing images and structure unchanged (text/alt-text-only changes)."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-07T08:05:23.810Z",
+  "summary": "REQ-4 was not implemented: the diff does not show any changes to `frontend/src/App.tsx` to restore the Sweta romantic copy and 29 November reference. Additionally, a constrained/forbidden file (`frontend/src/hooks/useInternetIdentity.ts`) was modified and an unrequested `project_state.json` file was added.",
+  "missing_requirements": [
+    {
+      "id": "REQ-4",
+      "requirement": "Revert the website content in `frontend/src/App.tsx` to the original Sweta romantic version (recipient name “Sweta”, romantic framing, story date “29 November”), removing any “Kavya ji”, “Rose Day”, or friendship-only rewrite; update relevant image alt text accordingly.",
+      "reason": "The diff summary shows no modifications to `frontend/src/App.tsx`, so the required text/alt-text reversion cannot be verified as implemented.",
+      "evidence": [
+        "<file-diff>: Modified files list does not include `frontend/src/App.tsx`"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Modified `frontend/src/hooks/useInternetIdentity.ts` (a file explicitly listed as do-not-edit).",
+      "reason": "BuildRequest constraints forbid editing `frontend/src/hooks/useInternetIdentity.ts` / `.tsx`, but the diff shows it was modified.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts"
+      ]
+    },
+    {
+      "description": "Added `project_state.json`.",
+      "reason": "The BuildRequest does not request adding this file; it appears to be metadata unrelated to reverting `frontend/src/App.tsx` content.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.92,
+  "changed_files": [
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "project_state.json"
+  ]
+}

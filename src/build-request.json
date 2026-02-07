@@ -1,0 +1,38 @@
+{
+  "kind": "build_request",
+  "title": "Revert site content back to original Sweta romantic version",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-4",
+      "text": "Revert the website content in `frontend/src/App.tsx` to the original Sweta romantic version (i.e., keep/restore the recipient name as “Sweta”, keep the romantic relationship framing, and keep/restore the story occasion/date as “29 November”), ensuring no remaining text reflects the alternative “Kavya ji”, “Rose Day”, or friendship-only rewrite.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-3"
+        ],
+        "quotes": [
+          "nhi pehla jasie he kar do sweta wala"
+        ]
+      },
+      "acceptanceCriteria": [
+        "All visible user-facing text in `frontend/src/App.tsx` refers to the recipient as “Sweta” (not “Kavya ji”).",
+        "The story section references “29 November” (not “Rose Day”).",
+        "Section titles and letter/signature are in the romantic version (e.g., titles like “Our Love Story”, romantic phrasing, and boyfriend/romantic signature if present in the original).",
+        "All relevant image `alt` text in `frontend/src/App.tsx` uses “Sweta” where a person-name is used, and does not mention “Kavya ji”."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under `frontend/src/hooks/useInternetIdentity.ts` / `frontend/src/hooks/useInternetIdentity.tsx`, `frontend/src/hooks/useActor.ts`, `frontend/src/main.tsx`, or anything in `frontend/src/components/ui` (compose instead of modifying).",
+    "Backend must remain single-actor in `backend/main.mo`; only add `backend/migration.mo` if a state upgrade is required (not expected for this change)."
+  ],
+  "nonGoals": [
+    "Do not introduce new backend functionality or persistence.",
+    "Do not rename or regenerate existing image files unless explicitly required; only adjust UI text/alt text as needed."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

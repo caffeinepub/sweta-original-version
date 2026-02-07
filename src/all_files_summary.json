@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Defines an empty Motoko actor with no backend logic.",
+  "feature_evidence.json": "Feature evidence report containing an empty features list.",
+  "frontend-file-summaries.txt": "Text file listing summaries of key frontend source files and their romantic UI features.",
+  "frontend/index.css": "Tailwind base theme variables and dark mode palette for structural site styling.",
+  "frontend/index.html": "Basic HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main React component handling section navigation, music playback, animations, and interactive butterflies.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an authenticated or anonymous backend actor using React Query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Implements Internet Identity auth context, login flow, identity persistence, and provider setup.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder hook returning no queries since the site is fully static.",
+  "frontend/src/index.css": "Custom romantic-themed Tailwind styles including gradients, animations, and page-turn effects.",
+  "frontend/src/main.tsx": "Bootstraps the React app with Internet Identity and React Query providers.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, animations, and plugins for the romantic UI.",
+  "project_state.json": "Stores the project’s current state, listing existing feature modifications, a pending request to revert to the original Sweta version, and metadata such as schema version and project configuration."
+}

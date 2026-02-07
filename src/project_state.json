@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Revert to the original Sweta version (no rename to Kavya ji, no Rose Day/friendship rewrite).",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-all-visible-recipient-naming-from-sweta-to-kavya-ji-across-the-page-content-in-frontend-src-app-tsx-including-headings-paragraphs-letter-greeting-and-the-ending-section-title-also-update-relevant-image-alt-text-to-use-kavya-ji-instead-of-sweta-image-filenames-can-remain-unchanged",
+      "title": "Update all visible recipient naming from “Sweta” to “Kavya ji” across the page content in `frontend/src/App.tsx`, including headings, paragraphs, letter greeting, and the ending section title. Also update relevant image `alt` text to use “Kavya ji” instead of “Sweta” (image filenames can remain unchanged).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-rewrite-the-website-copy-in-frontend-src-app-tsx-so-the-relationship-is-clearly-framed-as-friendship-not-girlfriend-boyfriend-this-includes-renaming-sections-like-our-love-story-why-sweta-is-my-everything-and-removing-rewriting-romantic-relationship-exclusive-phrases-e-g-soulmate-forever-yours-loving-boyfriend-to-friend-appropriate-language-ensure-the-letter-section-reads-as-a-heartfelt-message-to-a-friend-and-the-signature-identifies-the-sender-as-a-friend-not-boyfriend",
+      "title": "Rewrite the website copy in `frontend/src/App.tsx` so the relationship is clearly framed as friendship (not girlfriend/boyfriend). This includes renaming sections like “Our Love Story”, “Why Sweta Is My Everything”, and removing/rewriting romantic/relationship-exclusive phrases (e.g., soulmate, forever yours, loving boyfriend) to friend-appropriate language. Ensure the letter section reads as a heartfelt message to a friend and the signature identifies the sender as a friend (not boyfriend).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-occasion-date-reference-in-the-story-content-in-frontend-src-app-tsx-from-29-november-and-any-related-phrasing-to-rose-day-and-adjust-surrounding-sentences-so-the-moment-occasion-is-described-as-rose-day-in-a-friendship-context",
+      "title": "Change the occasion/date reference in the story content in `frontend/src/App.tsx` from “29 November” (and any related phrasing) to “Rose Day”, and adjust surrounding sentences so the moment/occasion is described as Rose Day in a friendship context.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Revert the website content in `frontend/src/App.tsx` to the original Sweta romantic version (i.e., keep/restore the recipient name as “Sweta”, keep the romantic relationship framing, and keep/restore the story occasion/date as “29 November”), ensuring no remaining text reflects the alternative “Kavya ji”, “Rose Day”, or friendship-only rewrite.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Sweta original version",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
